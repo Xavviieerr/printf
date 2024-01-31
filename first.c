@@ -10,6 +10,9 @@ int _printf(const char *format, ...)
 	char *str;
 	va_list args;
 
+	 if (format == NULL || format[0] == '\0')
+		 return (-1);
+
 	i = 0;
 	num_args = _strlen(format);
 
